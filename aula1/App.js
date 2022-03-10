@@ -4,9 +4,14 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>teste</Text>
+      <Text>teste!</Text>
       <StatusBar style="auto" />
-
+      <Button
+  onPress={onPressLearnMore}
+  title="Learn More"
+  color="#841584"
+  accessibilityLabel="Learn more about this purple button"
+/>
     </View>
   );
 }

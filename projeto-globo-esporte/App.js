@@ -1,12 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View ,Image} from 'react-native';
+import { Header } from 'react-native/Libraries/NewAppScreen';
+import Sony from './assets/sony-logo.png';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView>
+      <Text> Estácio</Text>
+      <Image source={header} style={styles.header}></Image>
+      <Text> Xbox Series</Text>
+      <Image source={Sony} />
+    </SafeAreaView>
   );
 }
 
